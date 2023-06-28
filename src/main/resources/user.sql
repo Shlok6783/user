@@ -1,0 +1,3 @@
+CREATE TABLE users (Id SERIAL PRIMARY KEY, name VARCHAR(255), DOB DATE, create_date DATE, update_date DATE);
+
+CREATE TABLE hobbies (Id SERIAL PRIMARY KEY, name VARCHAR(255) NOT NULL, description TEXT, user_id INT, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE);

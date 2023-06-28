@@ -88,4 +88,5 @@ public class User {
     public void setUpdateDate(LocalDate updateDate) {
         this.updateDate = updateDate;
     }
+    //just a random change
 }
